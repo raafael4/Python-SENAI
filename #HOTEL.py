@@ -1,0 +1,92 @@
+# HOTEL 
+
+
+print (' Ola seja bem vindo ao nosso Hotel ')
+
+nome =(input('digite o seu nome, : '))
+print ('ola' , nome)
+print ('vamos realizar seu cadastro ?')
+Idade=int (input('digite a sua idade :'))
+cpf = input ('digite a seu CPF : ')
+motivo= input ('digite o motivo da sua visita : ')
+
+cliente_1 = {
+'nome': nome,
+'idade': Idade,
+'cpf': cpf,
+'motivo_visita': motivo
+}
+
+print('Cadastro do cliente 2 ')
+
+nome2 =(input('digite o seu nome, : '))
+print ('ola' , nome2)
+print ('vamos realizar seu cadastro ?')
+Idade2=int (input('digite a sua idade :'))
+cpf2 = input ('digite a seu CPF : ')
+motivo2= input ('digite o motivo da sua visita : ')
+
+cliente_2 = {
+'nome': nome2,
+'idade': Idade2,
+'cpf': cpf2,
+'motivo_visita': motivo2
+}
+
+
+print ('seu cadastro foi finalizado segue as informacoes :', cliente_1)
+print ('seu cadastro foi finalizado segue as informacoes :', cliente_2)
+
+suites=['',100.00,150.0,250]
+
+print( '''
+Temos essas suites : 
+            
+1 = Suite simples: 100.00 R$/ Diaria
+2 = Suite dupla :  150.00 R$/ Diaria
+3 = Suite luxo :   250.00 R$/ Diaria
+      
+''')
+
+opcao = int(input(f"Qual suíte deseja?''{nome} (1 - Simples | 2 - Dupla | 3 - Luxo): "))
+dias=int(input ('quantos dias deseja ficar ?'))
+
+opcao2 = int(input(f"Qual suíte deseja?''{nome2} (1 - Simples | 2 - Dupla | 3 - Luxo): "))
+dias2=int(input ('quantos dias deseja ficar ?'))
+
+
+preco_escolhido = suites[opcao]
+preco_escolhido2 = suites[opcao2]
+
+if opcao >=0 and opcao <=1  : print ( 'voce escolheu a suite Simples')
+elif  opcao >= 1  and opcao <=2 : print ( 'voce escolheu a suite Dupla')
+elif  opcao > 2   : print ( 'voce escolheu a suite Luxo')
+else :  opcao >3
+print ('nao temos essa suite somente as outras 3 opcoes')
+
+if opcao2 >=0 and opcao2 <=1  : print ( 'voce escolheu a suite Simples')
+elif  opcao2 >= 1  and opcao2 <=2 : print ( 'voce escolheu a suite Dupla')
+elif  opcao2 > 2   : print ( 'voce escolheu a suite Luxo')
+else :  opcao2 >3
+print ('nao temos essa suite somente as outras 3 opcoes')
+
+soma1= dias * suites [opcao]
+soma2= dias * suites [opcao2]
+
+
+print('a suíte tem o valor da diaria de R$:', preco_escolhido )
+''
+''
+print('para a estadia o valor total é R$ :',soma1)
+
+print('a suíte tem o valor da diaria de R$:', preco_escolhido2 )
+''
+''
+print('para a estadia o valor total é R$ :',soma2)
+
+
+
+
+
+
+
