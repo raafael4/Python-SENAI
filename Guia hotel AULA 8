@@ -61,14 +61,10 @@ preco_escolhido2 = suites[opcao2]
 if opcao >=0 and opcao <=1  : print ( 'voce escolheu a suite Simples')
 elif  opcao >= 1  and opcao <=2 : print ( 'voce escolheu a suite Dupla')
 elif  opcao > 2   : print ( 'voce escolheu a suite Luxo')
-else :  opcao >3
-print ('nao temos essa suite somente as outras 3 opcoes')
 
 if opcao2 >=0 and opcao2 <=1  : print ( 'voce escolheu a suite Simples')
 elif  opcao2 >= 1  and opcao2 <=2 : print ( 'voce escolheu a suite Dupla')
 elif  opcao2 > 2   : print ( 'voce escolheu a suite Luxo')
-else :  opcao2 >3
-print ('nao temos essa suite somente as outras 3 opcoes')
 
 soma1= dias * suites [opcao]
 soma2= dias * suites [opcao2]
@@ -83,6 +79,7 @@ print('a suíte tem o valor da diaria de R$:', preco_escolhido2 )
 ''
 ''
 print('para a estadia o valor total é R$ :',soma2)
+
 
 
 
